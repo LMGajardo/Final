@@ -77,7 +77,7 @@ const [idPersona,setIdPersona] = useState("")
         <label>Escriba un Mensaje: </label><br/> <textarea onChange={(e) => setMensaje(e.target.value)} value={Mensaje} />
 
 
-        <label>Aceptar terminos y condiciones: </label><br/>
+        <label>Aceptar terminos: </label><br/>
         <input type="checkbox"onChange={(e)=>setAceptar(e.target.checked)}checked={Aceptar}/><br/>
         <button type='button' onClick={registrar}>Registrar</button>
     </form>

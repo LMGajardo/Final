@@ -3,6 +3,7 @@ import { obtenerPersonas } from '../Firebase/Promesas'
 import { Persona } from '../Interfaces/IFormulario'
 import { Link } from 'react-router-dom'
 import { Eliminar } from './Eliminar'
+import './contactanos.css'; 
 
 
 
@@ -45,7 +46,7 @@ export const Registros = () => {
             <th>Teléfono</th>
             <th>Fecha</th>
             <th>Mensaje</th>
-            <th>Aceptar terminos y condiciones</th>
+            <th>Aceptar</th>
             <th>Editar</th>
             <th>Eliminar</th>
         </tr>

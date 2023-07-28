@@ -87,7 +87,7 @@ export const Eliminar = () => {
     }
     //actualizar
     eliminarPersona(idPersona).then(()=>{
-        alert("Se elimino con exito")
+        alert("Se elimino")
     })
     //registrarPersona(p)
     console.log(nombre);
@@ -104,7 +104,7 @@ export const Eliminar = () => {
   const validarNombre = (valor:string)=>{
     setNombre(valor);
     if(valor.length<3){
-      setErrorNombre("Debe tener mas de 3 letras")
+      setErrorNombre("Mas de 3 letras")
     }
     else{
       setErrorNombre("")
