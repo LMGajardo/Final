@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "homepage": "https://panel.000webhost.com/dashboard/luciano2312312/dashboard",
   "dependencies": {
     "@types/node": "20.4.5",
     "@types/react": "18.2.17",

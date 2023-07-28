@@ -15,4 +15,4 @@ export const Ubicacion: React.FC = () => {
     );
   };
   
-export default Ubicacion;a
+export default Ubicacion;
