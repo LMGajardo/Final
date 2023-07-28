@@ -4,6 +4,29 @@ import { Persona } from '../Interfaces/IFormulario'
 import { actualizarPersona, obtenerPersona, eliminarPersona } from '../Firebase/Promesas';
 import { Console } from 'console';
 
+
+// Se utilizan hooks de estado (useState) para mantener el estado de diferentes variables utilizadas en el
+//  formulario, como nombre, Correo, Contrasena, etc.
+// Algunas de las variables de estado inician con valores vacíos, mientras que otras inician con valores 
+// específicos, como edad y Telefono, que se inicializan con cadenas vacías y luego se convierten en enteros 
+// usando parseInt().
+
+// Hook useEffect:
+
+// Se utiliza el hook useEffect para cargar los datos de una persona en el formulario cuando se pasa un idPersona
+//  como parámetro en la URL. Esto se hace mediante la función obtenerPersona de Firebase.
+// Los datos recuperados se utilizan para establecer los valores de las variables de estado del componente para que 
+// el formulario se llene con la información existente.
+// Función actualizar:
+
+// Esta función se ejecuta cuando el botón "Actualizar" del formulario se presiona.
+// Se realiza una validación simple para el campo nombre, donde se comprueba si está en blanco. Si está en blanco,
+//  se muestra un mensaje de error, de lo contrario, se establece el nombre después de eliminar los espacios en blanco.
+// Los datos del formulario se agrupan en un objeto Persona y se pasan a la función actualizarPersona de Firebase 
+// para actualizar los datos en la base de datos.
+// Luego, se muestran los valores de todas las variables de estado en la consola (esto podría ser útil para verificar
+//    que los datos se estén manejando correctamente).
+
 export const Actualizar = () => {
   const params = useParams()
   const [nombre, setNombre] = useState("")
@@ -105,3 +128,9 @@ export const Actualizar = () => {
     </form>
   )
 }
+
+
+// Función validarNombre:
+
+// Esta función se ejecuta cuando el campo de nombre cambia su valor y se utiliza para validar la longitud del nombre.
+// Si el nombre tiene menos de 3 letras, se establece un mensaje de error correspondiente.
