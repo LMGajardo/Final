@@ -37,14 +37,7 @@ const [idPersona,setIdPersona] = useState("")
 
     }
     registrarPersona(p)
-    console.log(nombre);
-    console.log(Correo)
-    console.log(Contrasena);
-    console.log(edad);
-    console.log(Telefono);
-    console.log(Fecha);
-    console.log(Mensaje);
-    console.log(Aceptar)
+   
     alert("Bienvenido "+nombre+" "+Correo);
   }
   const validarNombre = (valor:string)=>{
