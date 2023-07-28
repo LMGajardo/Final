@@ -4,6 +4,34 @@ import { Persona } from '../Interfaces/IFormulario'
 import { obtenerPersona, eliminarPersona } from '../Firebase/Promesas';
 import { Console } from 'console';
 
+
+// Funcionamineto similar al actualizar
+
+
+// Función eliminar:
+
+// Esta función se ejecuta cuando el botón "Eliminar" del formulario se presiona.
+// Se realiza una validación simple para el campo nombre, donde se comprueba si está en blanco. Si está en
+//  blanco, se muestra un mensaje de error, de lo contrario, se establece el nombre después de eliminar los 
+//  espacios en blanco.
+// Los datos del formulario se agrupan en un objeto Persona y se pasan a la función eliminarPersona de Firebase 
+// para eliminar los datos de la persona correspondiente en la base de datos.
+// Luego, se muestran los valores de todas las variables de estado en la consola (esto podría ser útil para 
+//   verificar que los datos se estén manejando correctamente).
+// Función validarNombre:
+
+// Esta función se ejecuta cuando el campo de nombre cambia su valor y se utiliza para validar la longitud del nombre.
+// Si el nombre tiene menos de 3 letras, se establece un mensaje de error correspondiente.
+// Formulario:
+
+// El formulario muestra campos de entrada para el nombre, correo electrónico, contraseña, edad, teléfono, fecha,
+//  mensaje y un checkbox de aceptación.
+// Los campos de entrada no son modificables, lo que significa que no se pueden editar manualmente.
+// Los valores de cada campo de entrada se establecen utilizando el atributo value, pero como no se proporciona una
+//  función onChange, no es posible editar los valores directamente en el formulario.
+
+
+
 export const Eliminar = () => {
   const params = useParams()
   const [nombre, setNombre] = useState("")
