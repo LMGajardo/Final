@@ -24,6 +24,7 @@ const [idPersona,setIdPersona] = useState("")
       setNombre(nombre.trim())
     }
 
+    
     //Asuman que se valido todo
     const p:Persona = {
         nombre,

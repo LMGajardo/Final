@@ -1,5 +1,5 @@
 import React from "react";
-
+import './Screenshot 2023-07-27 202423.png'
 export const Ubicacion: React.FC = () => {
     return (
       <div>
